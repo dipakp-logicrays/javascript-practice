@@ -11,3 +11,8 @@
 - Array sort functions
 - Dates functions
 - Math function
+- Class example
+- Three dots operator example
+- Boolean example
+- 5 types of loops
+- `typeof` example
