@@ -97,10 +97,10 @@ JavaScript let
 
 // Difference Between var, let and const
 
-		Scope	Redeclare	Reassign	Hoisted	Binds this
-var		No		Yes			Yes			Yes		Yes
-let		Yes		No			Yes			No		No
-const	Yes		No			No			No		No
+		Scope	Redeclare  Reassign Hoisted   Binds this
+var		No	Yes	   Yes 	    Yes	      Yes
+let		Yes	No	   Yes	    No	      No
+const	        Yes	No	   No	    No	      No
 
 // Example: Redeclaring a JavaScript variable with var is allowed anywhere in a program:
 	var x = 2;
