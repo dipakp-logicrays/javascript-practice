@@ -1,5 +1,5 @@
 ================================
-        22-04-2024 Friday       
+        22-04-2024 Monday       
 ================================
 // <<<<< JS dates start >>>>>
     // There are 9 ways to create a new date object:
