@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice</title>
+</head>
+<body>
+
+
+    <script>
+        // Object
+        // add size key to car object using []
+        const car = {type:"Fiat", model:"500", color:"white"};
+        car.weight = "100kg";
+        car["size"] = "8mtr";
+        console.log(car)
+
+        const person = {
+            firstName: "John",
+            lastName : "Doe",
+            id       : 5566,
+            fullName : function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        console.log(person.fullName(), person);
+        // Regular function
+        function greetingsnew(name) {
+            return `Hello, ${name}!`;
+        }
+
+        // Arrow Function Examples
+        const greetings = (name) => `Hello, ${name}!`;
+        const greetings2 = name => `Hello, ${name}!`;
+        const greetings3 = () => console.log(`Hello, World!`);
+
+        const addNumbers = (a, b) => a + b;
+        const result = addNumbers(5, 3); // 8
+
+        // Arrow Function With One Argument
+        const square = x => x * x;
+        // use the arrow function to square a number
+        console.log(square(5)); //25
+
+        const square1 = x => x*x;
+        const division = (a, b) =>  a/b ;
+
+        const calculateArea = (length, width) => {
+            const area = length * width;
+            return area;
+        }
+        console.log("Calculate Area", calculateArea (5,3));
+
+
+        // The ... operator expands an iterable (like an array) into more elements:
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["Apr", "May", "Jun"];
+        const q3 = ["Jul", "Aug", "Sep"];
+        const q4 = ["Oct", "Nov", "Dec"];
+        const year = [... q1,... q2, ... q3, ... q4];
+        console.log(year);
+
+        // Swith Case Example
+        let day = "Friday";
+        switch (day) {
+            case "Monday":
+                console.log("Start day of the week");
+                break;
+            case "Friday":
+                console.log("Almost weekend");
+                break;
+            default :
+                console.log("Another Day");
+                break;
+        }
+
+        // Loop Example
+        let index = "";
+        for (i=1; i<=10; i++) {
+            index += " "+i;
+        }
+        console.log ("Number", index);
+        
+        // While Loop example
+        let j = 0;
+        while (j < 5) {
+            // console.log(j);
+            j++;
+        }
+
+        // Do While Loop Example: execute etleast once
+        let k = 0;
+        do {
+            // console.log(k);
+            k++
+        } while (k < 5);
+
+        // Function Example
+        function greeting (name){
+            return `Hello, ${name}!`;
+        }
+        console.log (greeting("Dipak"));
+
+        // Arrays (Basic Operations)
+        const fruits = ["Apple", "Banana"];
+        console.log(fruits[0], fruits.length);
+        fruits.push("Mango")
+        console.log(fruits);
+        fruits.pop();
+        console.log(fruits);
+        fruits.shift();  
+        console.log(fruits);    
+        fruits.unshift("Orange");
+        console.log(fruits);    
+
+
+        // try catch
+        try {
+            let result = 10/0;
+            if (!isFinite(result)) throw "can not divide by zero";
+            console.log("Result: ", result)
+        }catch (error) {
+            console.log("Error:", error);
+        }finally {
+            console.log("This will run no matter what.");
+        }
+    </script>
+</body>
+</html>

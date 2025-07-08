@@ -1,5 +1,5 @@
 // use single or double quote for string declare
-let text = "This is single quote string';
+let text = 'This is single quote string';
 let text = "This is double quote string";
 
 // slice function for string
